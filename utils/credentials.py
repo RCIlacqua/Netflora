@@ -8,7 +8,7 @@ Origin: Netflora (https://github.com/NetFlora/Netflora)
 
 from ipywidgets import Button, Text, Dropdown, Output, VBox, HTML, Checkbox
 from IPython.display import display, clear_output
-from google.colab import drive
+#from google.colab import drive
 import requests
 import re
 import json
@@ -169,7 +169,7 @@ def credentials():
                 return
 
             display(HTML(f'<span style="color: blue;">{msg["mounting_drive"]}</span>'))
-            drive.mount('/content/drive')
+            #drive.mount('/content/drive')
             display(HTML(f'<span style="color: green;">{msg["data_submitted"]}</span>'))
 
             country = country_input.value if country_input.value else 'Brasil'
